@@ -1,11 +1,7 @@
 import React from 'react';
 
-const Square = () => {
-	return (
-		<div className="Square">
-			<p>I am the square</p>
-		</div>
-	);
+const Square = ({ color }) => {
+	return <div className="Square">{color ? <p>{color}</p> : <p>Empty Value</p>}</div>;
 };
 
 export default Square;
