@@ -40,9 +40,10 @@ body {
 	border-color: dimgray;
 	width: 270px;
 	height: 270px;
+	font-size: 20px;
 }
 
-.ColorInput {
+#ColorInput {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -53,4 +54,11 @@ body {
 	margin-top: 10px;
 	width: 270px;
 	height: 34px;
+	font-size: 20px;
+	text-align: center;
+}
+
+#ColorInput:focus {
+	outline: gray;
+	box-shadow: 3px 3px 10px;
 }

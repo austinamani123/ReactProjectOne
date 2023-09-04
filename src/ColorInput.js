@@ -1,10 +1,16 @@
 import React from 'react';
 
-const ColorInput = () => {
+const ColorInput = ({ color, handleChange }) => {
 	return (
-		<div className="ColorInput">
-			<p>Input Colour</p>
-		</div>
+		<form className="ColorInput">
+			<input
+				type="text"
+				id="ColorInput"
+				placeholder="Add Color Name"
+				onChange={handleChange}
+				value={color}
+			/>
+		</form>
 	);
 };
 
