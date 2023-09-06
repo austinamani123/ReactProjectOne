@@ -14,7 +14,7 @@ const Content = () => {
 	};
 
 	const squareStyle = {
-		backgroundcColor: divBackgroundColor,
+		backgroundColor: divBackgroundColor,
 	};
 
 	return (
