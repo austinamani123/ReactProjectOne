@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ColorInput = ({ color, handleChange }) => {
+const ColorInput = ({ color, handleChange, setHexValue, isDarkText, setIsDarkText }) => {
 	return (
 		<form className="ColorInput">
 			<input
@@ -10,6 +10,9 @@ const ColorInput = ({ color, handleChange }) => {
 				onChange={handleChange}
 				value={color}
 			/>
+			<button type="button" onClick={() => setIsDarkText(!isDarkText)}>
+				Toggle Text Color
+			</button>
 		</form>
 	);
 };
